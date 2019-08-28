@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>personaje.jpg</file>
+        <file>piso.png</file>
+        <file>pared.png</file>
+        <file>enemigo.png</file>
+    </qresource>
+</RCC>

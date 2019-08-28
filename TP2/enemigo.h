@@ -2,20 +2,25 @@
 #define ENEMIGO_H
 
 #include <QGraphicsRectItem>
+#include <QGraphicsPixmapItem>
 #include <QObject>
 #include <QGraphicsItem>
 #include <QKeyEvent>
 #include <QGraphicsScene>
 #include <QTimer>
+#include <personaje.h>
 
-class enemigo: public QObject, public QGraphicsRectItem
+class enemigo: public QObject, public  QGraphicsPixmapItem
 {
     Q_OBJECT
+
 public:
     enemigo(QGraphicsItem *parent = nullptr);
 public slots:
-    void mover();
+    virtual void mover();
     void generar();
+    void colision();
+    //void perseguir();
 };
 
 #endif // ENEMIGO_H

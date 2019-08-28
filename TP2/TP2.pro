@@ -25,12 +25,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        celda.cpp \
         enemigo.cpp \
         game.cpp \
         main.cpp \
         personaje.cpp
 
 HEADERS += \
+    celda.h \
     enemigo.h \
     game.h \
     personaje.h
@@ -41,3 +43,6 @@ FORMS +=
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    recursos.qrc
